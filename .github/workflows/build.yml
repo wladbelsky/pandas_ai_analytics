@@ -1,4 +1,4 @@
-name: Test api and build the docker image
+name: Build the docker image
 
 on:
   push:
