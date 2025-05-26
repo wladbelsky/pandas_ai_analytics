@@ -1,10 +1,8 @@
-FROM python:3.13-bullseye
+FROM python:3.13
 
 LABEL authors="wladbelsky"
 
 COPY requirements.txt /app/requirements.txt
-
-RUN apt-get update && apt-get install -y libpq-dev
 
 RUN pip install -r /app/requirements.txt
 
